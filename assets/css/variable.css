@@ -1,0 +1,25 @@
+/* 
+    Theme: SEO Landing Page
+    Version: 1.0
+    Author: Aakash Sharma
+*/
+
+/* Primary Color */
+
+:root{
+    --primary-color: #2B2D42;
+    --secondary-color: #EF233C;
+    --accent-color: #D90429;
+    --white-color: #ffffff;
+    --font-color: #222222;
+    --light-bg-color: #f6f6f6;
+    --tertiary-color: #8D99AE;
+    --quartnery-color: #EDF2F4;
+    --body-font-color: #5d5555;
+    --body-font-family: "Montserrat Regular";
+    --heading-font-family: "Prompt SemiBold";
+    --section-vertical-padding: 50px;
+    --section-horizontal-padding: 15px;
+    --grid-flex-spacing: 15px;   
+    --header-vertical-padding: 10px;
+}

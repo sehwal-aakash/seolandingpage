@@ -1,0 +1,49 @@
+/* 
+    Theme: SEO Landing Page
+    Version: 1.0
+    Author: Aakash Sharma
+*/
+
+/* Prompt Font Family */
+
+@font-face {
+    font-family: "Prompt Regular";
+    src: url('../fonts/Prompt/Prompt-Regular.woff');
+}
+
+@font-face {
+    font-family: "Prompt Medium";
+    src: url('../fonts/Prompt/Prompt-Medium.woff');
+}
+
+@font-face {
+    font-family: "Prompt SemiBold";
+    src: url('../fonts/Prompt/Prompt-SemiBold.woff');
+}
+
+@font-face {
+    font-family: "Prompt Bold";
+    src: url('../fonts/Prompt/Prompt-Bold.woff');
+}
+
+/* Montserrat Font Family */
+
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url('../fonts/Montserrat/Montserrat-Regular.woff');
+}
+
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url('../fonts/Montserrat/Montserrat-Medium.woff');
+}
+
+@font-face {
+    font-family: "Montserrat SemiBold";
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.woff');
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url('../fonts/Montserrat/Montserrat-Bold.woff');
+}

@@ -3,3 +3,172 @@
     Version: 1.0
     Author: Aakash Sharma
 */
+
+/* Importing Fonts */
+@import url('fonts.css');
+@import url('variable.css');
+
+*,
+*::after,
+*::before{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section{
+    padding: var(--section-vertical-padding) 0;
+    overflow: hidden;
+}
+
+header{
+    padding: var(--header-vertical-padding) 0;
+    border: 1px solid var(--light-bg-color);
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+object, svg{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+button{
+    background: var(--secondary-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.05);
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    padding: 10px 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 250ms;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+}
+
+button:hover,
+button:focus{
+    background: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transform: translateY(-1px);
+}
+
+button:active{
+    background: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+body{
+    font-size: 16px;
+    font-family: var(--body-font-family);
+    color: var(--body-font-color);
+    line-height: 1.4;
+    letter-spacing: -0.04px;
+    background: var(--white-color);
+}
+
+/* CSS For Header */
+
+.headerflexbox {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerlogobox{
+    padding-right: 20px;
+}
+
+.headermenubox ul {
+    display: flex;
+    align-items: center;
+}
+
+.headermenubox ul li {
+    display: block;
+    padding: 0 5px;
+}
+
+.headermenubox ul li a {
+    display: block;
+    padding: 10px 8px;
+    line-height: 1;
+}
+
+.contactctabuttonbox {
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contactbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactbox .contacticon {
+    flex: 0 0 auto;
+    max-width: 16px;
+}
+
+.ctabuttonbox button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white-color);
+    font-family: "Montserrat Medium";
+    font-weight: 500;
+}
+
+span.buttonicon {
+    display: block;
+    flex: 0 0 auto;
+    max-width: 16px;
+}
+
+span.buttonicon svg path {
+    fill: #fff;
+}
+
+.contactcontent a{
+    font-family: "Montserrat Medium";
+    color: var(--primary-color);
+}
+
+.contactbox .contacticon svg path {
+    fill: #2b2d42;
+}
