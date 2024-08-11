@@ -41,6 +41,7 @@ object, svg{
     display: block;
     max-width: 100%;
     height: auto;
+    width: auto;
 }
 
 a{
@@ -313,4 +314,138 @@ span.buttonicon svg path {
     filter: grayscale(1);
     max-width: 110px;
     margin: auto;
+}
+
+/* CSS For Services */
+
+.servicesbtncontainer div {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    margin: 20px auto 0;
+    position: relative;
+    cursor: pointer;
+    max-width: max-content;
+    transition: all 0.4s ease-in-out;
+}
+
+.servicesbtncontainer div:hover span.buttontext{
+    color: var(--secondary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.servicesbtncontainer div:hover span.buttonicon svg path{
+    fill: var(--secondary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+section.services-section.section {
+    background: var(--light-bg-color);
+}
+
+.sectiontitlebox {
+    text-align: center;
+    margin: 0 auto 30px;
+    max-width: 700px;
+    padding: 0 var(--section-horizontal-padding);
+    position: relative;
+}
+
+.servicesbtncontainer div span.buttontext {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.servicesbtncontainer div span.buttonicon svg path {
+    fill: var(--body-font-color);
+}
+
+.servicesbtncontainer div span.buttonicon {
+    display: flex;
+}
+
+.sectiontitlebox p {
+    margin-top: 10px;
+}
+
+.sectiontitlebox:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/pie-chart.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.sectiontitlebox:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("../images/speaker.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.servicesflexboxcontainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.servicesflexitembox {
+    flex: 0 0 calc((100% - 80px)/5);
+    max-width: calc((100% - 80px)/5);
+}
+
+.servicesflexitem {
+    padding: 20px;
+}
+
+.servicesiconboxcontainer {
+    padding-bottom: 15px;
+}
+
+.servicesiconbox {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 60px;
+    height: 60px;
+    padding: 12px;
+    background: #fde9ec;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 0px var(--secondary-color);
+    margin: auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.servicesiconboxcontent h3 {
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.servicesflexitem:hover{
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.servicesflexitem:hover .servicesiconbox{
+    transform: translateY(-1px);
+    box-shadow: 0px 1px 1px 0px var(--secondary-color);
+}
+
+.servicesflexitem:hover .servicesiconboxcontent h3{
+    color: var(--secondary-color);
+    transition: all 0.4s ease-in-out;
 }
