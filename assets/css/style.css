@@ -449,3 +449,82 @@ section.services-section.section {
     color: var(--secondary-color);
     transition: all 0.4s ease-in-out;
 }
+
+/* CSS for Image with Text Section */
+
+.imagewithtextflexboxcontainer {
+    display: flex;
+    gap: 40px;
+}
+
+.imagewithtextimagebox {
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+.imagewithtextcontentbox {
+    flex: 0 0 calc(55% - 40px);
+    max-width: calc(55% - 40px);
+}
+
+.imagewithtextcontentbox h2 {
+    max-width: 65%;
+    position: relative;
+    margin: 0 0 10px;
+}
+
+.imagewithtextcontentbox p {
+    max-width: 80%;
+    margin: 0 0 20px;
+}
+
+.imagewithtextctabuttoncontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+    max-width: 80%;
+}
+
+.imagewithtextctabuttonitem {
+    flex: 0 0 calc((100% - 20px)/3);
+    max-width: calc((100% - 30px)/3);
+}
+
+.imagewithtextctabuttonitem span {
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 14px;
+    white-space: nowrap;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0px 1px 1px var(--secondary-color);
+}
+
+.imagewithtextctabuttonitem:hover span,
+.imagewithtextctabuttonitem:first-child span {
+    background: var(--secondary-color);
+    color: var(--white-color);
+    transform: translateY(-1px);
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 1px 1px 0px var(--secondary-color);
+    cursor: pointer;
+}
+
+.imagewithtextcontentbox h2:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    background-image: url("../images/target.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
