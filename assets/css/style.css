@@ -46,6 +46,12 @@ object, svg{
 a{
     text-decoration: none;
     color: currentColor;
+    transition: all 0.4s ease-in-out;
+}
+
+a:hover{
+    color: var(--secondary-color);
+    transition: all 0.4s ease-in-out;
 }
 
 button{
@@ -55,9 +61,6 @@ button{
     justify-content: center;
     align-items: center;
     outline: none;
-    box-shadow: 0 0 2px 1px rgba(0,0,0,0.05);
-    border-radius: 4px;
-    display: block;
     text-align: center;
     padding: 10px 8px;
     cursor: pointer;
@@ -97,6 +100,36 @@ body{
     background: var(--white-color);
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font-family);
+    line-height: 1.4;
+    color: var(--primary-color);
+}
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 28px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+h6{
+    font-size: 18px;
+}
+
 /* CSS For Header */
 
 .headerflexbox {
@@ -124,6 +157,7 @@ body{
     display: block;
     padding: 10px 8px;
     line-height: 1;
+    font-family: 'Montserrat Medium';
 }
 
 .contactctabuttonbox {
@@ -137,7 +171,9 @@ body{
 .contactbox {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
 }
 
 .contactbox .contacticon {
@@ -169,6 +205,112 @@ span.buttonicon svg path {
     color: var(--primary-color);
 }
 
+.contactcontent a:hover,
+.contactbox:hover .contactcontent a,
+.contactbox:hover .contacticon svg path{
+    color: var(--secondary-color);
+    fill: var(--secondary-color);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
 .contactbox .contacticon svg path {
-    fill: #2b2d42;
+    fill: var(--primary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+/* CSS For Hero Section */
+
+.herosectionbox {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.herosectioncontentbox {
+    flex: 0 0 auto;
+    max-width: 45%;
+}
+
+.herosectionimagebox {
+    flex: 0 0 auto;
+    max-width: calc(55% - 40px);
+}
+
+.herosectiontagbutton span {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.herosectiontagbutton {
+    margin-bottom: 10px;
+}
+
+.herosectioncontent h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.herosectioncontent p {
+    font-size: 20px;
+    padding-right: 20px;
+    max-width: 85%;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.herosectionctabtnflexbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.herosectionpricingbutton button,
+.herosectionpricingbutton button:active{
+    background: var(--primary-color);
+}
+
+.herosectionpricingbutton button:hover,
+.herosectionpricingbutton button:focus{
+    background: var(--secondary-color);
+}
+
+/* CSS For Brands Section */
+
+.partnerflexboxcontainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.partnertitlebox {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.partnertitlebox h3 {
+    font-size: 20px;
+    color: var(--body-color);
+}
+
+.partnerflexbox {
+    flex: 0 0 calc(75% - 20px);
+    max-width: calc(75% - 20px);
+    display: flex;
+    gap: 10px;
+}
+
+.partnerflexitem {
+    flex: 0 0 calc((100% - 30px)/4);
+    max-width: calc((100% - 30px)/4);
+    padding: 10px;
+}
+
+.partnerflexitem img {
+    filter: grayscale(1);
+    max-width: 110px;
+    margin: auto;
 }
