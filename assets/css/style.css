@@ -528,3 +528,46 @@ section.services-section.section {
     background-position: center center;
     background-size: contain;
 }
+
+/* CSS For Number Details Section */
+
+section.number-details-section.section {
+    background-color: var(--light-bg-color);
+}
+
+.numberdetailsflexboxcontainer {
+    display: flex;
+    gap: 40px;
+}
+
+.numberdetailsflexitembox {
+    flex: 0 0 calc((100% - 80px)/3);
+    max-width: calc((100% - 80px)/3);
+}
+
+.numberdetailsflexitem {display: flex;gap: 20px;}
+
+.numberdetailsnumberbox {
+    flex: 0 0 10%;
+    max-width: 10%;
+}
+
+.numberdetailscontentbox {
+    flex: 0 0 calc(90% - 20px);
+}
+
+.numberdetailscontentbox h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.numberdetailsnumberbox span {
+    font-weight: 700;
+    font-family: var(--heading-font-family);
+    font-size: 48px;
+    line-height: 1;
+    display: block;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--secondary-color);
+}
