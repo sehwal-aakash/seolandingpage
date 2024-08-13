@@ -22,3 +22,22 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+
+// JS For Accordion
+
+var accSingleTriggers = document.querySelectorAll('.js-acc-single-trigger');
+
+accSingleTriggers.forEach(trigger => trigger.addEventListener('click', toggleAccordion));
+
+function toggleAccordion() {
+  var items = document.querySelectorAll('.js-acc-item');
+  var thisItem = this.parentNode;
+
+  items.forEach(item => {
+    if (thisItem == item) {
+      thisItem.classList.toggle('is-open');
+      return;
+    }
+    item.classList.remove('is-open');
+  });
+}
