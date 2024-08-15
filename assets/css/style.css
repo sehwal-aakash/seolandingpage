@@ -855,7 +855,7 @@ section.number-details-section.section {
 }
 
 section.pricing-section.section {
-    background: linear-gradient(180deg, #fff 75%, rgba(141,153,174,1) 100%);
+    background: linear-gradient(180deg, var(--white-color) 75%, var(--tertiary-color) 100%);
 }
 
 .pricing-flex-icon-box {
@@ -956,4 +956,37 @@ span.pricing-frequency {
 .pricing-flex-item-box:nth-child(2n) span.pricing-frequency,
 .pricing-flex-item-box:nth-child(2n) .pricing-feature-content-box span{
     color: var(--white-color);
+}
+
+/* Image with Text 2 Section */
+
+.imagewithtextsection2 .imagewithtextcontentbox h2 {
+    max-width: 75%;
+}
+
+.imagewithtextsection2 .imagewithtextcontentbox h2:after{
+    background-image: url("../images/internet.png");
+    right: 20%;
+}
+
+.imagewithtextsection2 .imagewithtext-list-flex-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.imagewithtextsection2 .imagewithtext-list-flex-box .imagewithtext-list-iconbox {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+    background-color: var(--secondary-color);
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.imagewithtextsection2 .imagewithtext-list-itembox {
+    margin-bottom: 4px;
 }
