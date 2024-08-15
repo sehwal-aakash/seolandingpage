@@ -763,6 +763,7 @@ section.number-details-section.section {
 .accordion-single-content p {
     padding: 10px;
     font-size: 14px;
+    max-width: 100%;
 }
   
 .accordion-single-item.is-open .accordion-single-content  {
@@ -776,4 +777,183 @@ section.number-details-section.section {
     border-top: 2px solid var(--secondary-color);
     border-right: 2px solid var(--secondary-color);
     transition: all 0.4s ease-in-out;
+}
+
+/* CSS For SEO Pricing Section */
+
+.pricing-title-box {
+    padding-bottom: 50px;
+    text-align: center;
+    position: relative;
+    max-width: 75%;
+    margin: auto;
+}
+
+.pricing-title-box::before{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../images/startup.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pricing-title-box::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("../images/social-media-icons.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.plan-subtitle-box {
+    margin-bottom: 10px;
+}
+
+.plan-subtitle-box span {
+    font-weight: 600;
+    color: var(--secondary-color);
+    display: block;
+    line-height: 1;
+}
+
+.pricing-title-box h2 {
+    margin-bottom: 10px;
+}
+
+.pricing-title-box p {
+    max-width: 65%;
+    margin: auto;
+}
+
+.pricing-flex-table-box-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px 20px;
+    align-items: start;
+}
+
+.pricing-flex-item-box {
+    flex: 0 0 auto;
+    max-width: calc((100% - 80px)/3);
+    border-radius: 4px;
+    padding: 40px 20px;
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+
+section.pricing-section.section {
+    background: linear-gradient(180deg, #fff 75%, rgba(141,153,174,1) 100%);
+}
+
+.pricing-flex-icon-box {
+    max-width: 80px;
+    margin: 0 auto 30px;
+    transform: rotate(-5deg);
+}
+
+.pricing-flex-icon-box img {
+    filter: drop-shadow(0px 0px - var(--primary-color));
+}
+
+.pricing-flex-item-box h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.pricing-flex-item-box p {
+    max-width: 75%;
+    margin: 0 auto 20px;
+}
+
+.pricing-flex-price-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 30px;
+}
+
+.pricing-flex-price-box span.currency-logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+span.pricing-main-price {
+    font-size: 64px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: var(--heading-font-family);
+}
+
+span.pricing-frequency {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    display: block;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.pricing-feature-flex-box {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-feature-icon-box {
+    flex: 0 0 auto;
+    width: 16px;
+    height: 16px;
+    background: var(--secondary-color);
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-key-features-item-box {
+    margin-bottom: 4px;
+}
+
+.pricing-feature-content-box span {
+    font-size: 14px;
+}
+
+.pricing-key-features-box {
+    margin-bottom: 20px;
+}
+
+.pricing-choose-button-box button {
+    margin: auto;
+}
+
+.pricing-flex-item-box:nth-child(2n) {
+    background: var(--primary-color);
+    margin-top: -40px;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 10px;
+}
+
+.pricing-flex-item-box:nth-child(2n) h3,
+.pricing-flex-item-box:nth-child(2n) p,
+.pricing-flex-item-box:nth-child(2n) span.pricing-main-price,
+.pricing-flex-item-box:nth-child(2n) span.pricing-frequency,
+.pricing-flex-item-box:nth-child(2n) .pricing-feature-content-box span{
+    color: var(--white-color);
 }
