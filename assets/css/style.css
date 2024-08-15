@@ -990,3 +990,103 @@ span.pricing-frequency {
 .imagewithtextsection2 .imagewithtext-list-itembox {
     margin-bottom: 4px;
 }
+
+/* CSS For CTA Section */
+
+.cta-section-container {
+    max-width: 75%;
+    margin: auto;
+    padding: 0 15px;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.cta-section-container:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    box-shadow: #94bbe9 0px 0px 150px 75px;
+    z-index: -1;
+}
+
+.cta-section-container:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    box-shadow: #94bbe9 0px 0px 150px 75px;
+    z-index: -1;
+}
+
+.cta-section-img-flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cta-section-img-flex-item-box {
+    flex: 0 0 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 1px;
+    border: 1px solid var(--secondary-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+
+.cta-section-img-flex-item-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.cta-section-title-container h2 {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 9;
+}
+
+span.cta-image-content-flex-box {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+span.cta-image-box {
+    max-width: 48px;
+    flex: 0 0 auto;
+}
+
+.cta-section-title-container h2 {
+    max-width: 75%;
+    margin: 0 auto 10px;
+}
+
+span.cta-image-content-flex-box {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+span.cta-image-box {
+    max-width: 34px;
+    flex: 0 0 auto;
+}
+
+.cta-section-content-desc-container p {
+    max-width: 65%;
+    margin: 0 auto 30px;
+}
+
+.cta-section-button-container button {
+    margin: auto;
+}
