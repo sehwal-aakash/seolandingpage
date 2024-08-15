@@ -4,6 +4,20 @@
     Author: Aakash Sharma
 */
 
+// JS For Hamburger Menu
+
+var headermenuiconbox = document.querySelector(".headermenuiconbox");
+var mobilemenucontainer = document.querySelector(".mobilemenucontainer");
+var mobilemenucrossbutton = document.querySelector(".mobilemenucrossbutton");
+
+headermenuiconbox.addEventListener("click",function () {
+  mobilemenucontainer.classList.add("menuactive");
+})
+
+mobilemenucrossbutton.addEventListener("click",function () {
+  mobilemenucontainer.classList.remove("menuactive");
+})
+
 // JS For Tabber Section
 
 var tabs = document.querySelectorAll('[data-tab-target]')
@@ -47,7 +61,7 @@ function toggleAccordion() {
 document.addEventListener("DOMContentLoaded", function() {
   var currentYear = new Date().getFullYear();
   var yearElement = document.querySelector('.currentyear');
-  
+
   if (yearElement) {
       yearElement.textContent = currentYear;
   }

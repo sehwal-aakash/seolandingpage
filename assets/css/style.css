@@ -136,6 +136,14 @@ h6{
 
 /* CSS For Header */
 
+.desktopheader{
+    display: block;
+}
+
+.mobileheader{
+    display: none;
+}
+
 .headerflexbox {
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
@@ -1218,4 +1226,83 @@ span.cta-image-box {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* CSS For Responsive */
+
+@media (max-width: 1024px) {
+    .desktopheader{
+        display: none;
+    }
+    
+    .mobileheader{
+        display: block;
+        position: relative;
+    }
+
+    .mobileheader .headerflexbox {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .mobileheader .headerlogobox {
+        max-width: 200px;
+    }
+    
+    .mobileheader .headermenuiconbox {
+        max-width: 16px;
+        cursor: pointer;
+    }
+    
+    .mobileheader .mobilemenucontainer {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        padding: 40px 20px;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--primary-color);
+        z-index: 99;
+        overflow: hidden auto;
+        transform: translateX(calc(-100% - 15px));
+        transition: all 0.4s ease-in-out;
+    }
+
+    .mobileheader .headermenubox ul {
+        display: block;
+    }
+
+    .mobileheader .headermenubox ul li a{
+        color: var(--white-color);
+    }
+    
+    .mobileheader .contactctabuttonbox {
+        padding: 20px 0 0 0;
+        display: block;
+    }
+    
+    .mobileheader .contactctabuttonbox .contactbox {
+        margin-bottom: 20px;
+    }
+
+    .mobileheader .contactctabuttonbox .contactbox .contacticon svg path{
+        fill: var(--secondary-color);
+    }
+
+    .mobileheader .contactctabuttonbox .contactbox .contactcontent a{
+        color: var(--white-color);
+    }
+
+    .mobilemenucrossbutton {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        max-width: 16px;
+        cursor: pointer;
+    }
+
+    .mobileheader .mobilemenucontainer.menuactive {
+        transform: unset;
+        transition: all 0.4s ease-in-out;
+    }
 }
