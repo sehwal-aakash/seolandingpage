@@ -41,3 +41,14 @@ function toggleAccordion() {
     item.classList.remove('is-open');
   });
 }
+
+// JS For Current Year
+
+document.addEventListener("DOMContentLoaded", function() {
+  var currentYear = new Date().getFullYear();
+  var yearElement = document.querySelector('.currentyear');
+  
+  if (yearElement) {
+      yearElement.textContent = currentYear;
+  }
+});

@@ -25,6 +25,9 @@
 header{
     padding: var(--header-vertical-padding) 0;
     border: 1px solid var(--light-bg-color);
+    position: sticky;
+    top: 0;
+    background-color: var(--white-color);
 }
 
 .container{
@@ -996,7 +999,7 @@ span.pricing-frequency {
 .cta-section-container {
     max-width: 75%;
     margin: auto;
-    padding: 0 15px;
+    padding: 0px 15px;
     text-align: center;
     position: relative;
     z-index: 0;
@@ -1089,4 +1092,130 @@ span.cta-image-box {
 
 .cta-section-button-container button {
     margin: auto;
+}
+
+/* CSS For Footer */
+.mainfooter.section {
+    background-color: var(--primary-color);
+    padding: 50px 0;
+    color: var(--white-color);
+}
+
+.footerflexbox {
+    display: flex;
+    gap: 20px;
+}
+
+.footerflexitembox {
+    flex: 0 0 calc((100% - 60px)/4);
+    max-width: calc((100% - 60px)/4);
+}
+
+.footerlogo {
+    max-width: 180px;
+    margin: 0 0 20px;
+}
+
+.footeraboutcontent {
+    padding: 0 15px 20px 0;
+}
+
+.footeraboutcontent p {
+    font-size: 15px;
+}
+
+.footersocialflexbox {
+    display: flex;
+    gap: 10px;
+}
+
+.footersocialflexitembox a {
+    display: block;
+    max-width: 16px;
+}
+
+.footersocialflexitembox {
+    flex: 0 0 auto;
+    max-width: calc((100% - 30px)/4);
+}
+
+.footermenutitle h3 {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footeraddresscontent {
+    padding-bottom: 20px;
+}
+
+.footercontactitemflexbox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footercontacticonbox {
+    flex: 0 0 auto;
+    max-width: 16px;
+}
+
+.footermenucontainer ul li {
+    margin-bottom: 4px;
+}
+
+.copyright {
+    padding: 10px 0;
+}
+
+.copyrightflexbox {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyrightcontentbox p {
+    font-size: 14px;
+}
+
+.copyrightcontentbox p a {
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.copyrightcontentbox p a:hover {
+    transition: all 0.4s ease-in-out;
+    color: var(--secondary-color);
+}
+
+.policyflexbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.policyflex-item {
+    padding-right: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.policyflex-item a{
+    font-size: 14px;
+}
+
+.policyflex-item:not(:last-child):after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 14px;
+    background-color: var(--primary-color);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
