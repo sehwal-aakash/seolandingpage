@@ -28,6 +28,7 @@ header{
     position: sticky;
     top: 0;
     background-color: var(--white-color);
+    z-index: 999;
 }
 
 .container{
@@ -237,6 +238,7 @@ span.buttonicon svg path {
     display: flex;
     gap: 40px;
     padding-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .herosectioncontentbox {
@@ -278,6 +280,7 @@ span.buttonicon svg path {
     display: flex;
     align-items: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .herosectionpricingbutton button,
@@ -295,6 +298,7 @@ span.buttonicon svg path {
 .partnerflexboxcontainer {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -312,6 +316,7 @@ span.buttonicon svg path {
     flex: 0 0 calc(75% - 20px);
     max-width: calc(75% - 20px);
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -409,6 +414,7 @@ section.services-section.section {
 
 .servicesflexboxcontainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
@@ -465,6 +471,7 @@ section.services-section.section {
 
 .imagewithtextflexboxcontainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -526,7 +533,13 @@ section.services-section.section {
     cursor: pointer;
 }
 
-.imagewithtextcontentbox h2:after {
+.imagewithtextcontentbox h2 span.titleimg {
+    display: inline-block;
+    max-width: 36px;
+    vertical-align: baseline;
+}
+
+/* .imagewithtextcontentbox h2:after {
     content: "";
     width: 40px;
     height: 40px;
@@ -538,7 +551,7 @@ section.services-section.section {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-}
+} */
 
 /* CSS For Number Details Section */
 
@@ -548,6 +561,7 @@ section.number-details-section.section {
 
 .numberdetailsflexboxcontainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -556,7 +570,7 @@ section.number-details-section.section {
     max-width: calc((100% - 80px)/3);
 }
 
-.numberdetailsflexitem {display: flex;gap: 20px;}
+.numberdetailsflexitem {display: flex; flex-wrap: wrap; gap: 20px;}
 
 .numberdetailsnumberbox {
     flex: 0 0 10%;
@@ -593,6 +607,7 @@ section.number-details-section.section {
     max-width: 65%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -637,6 +652,7 @@ section.number-details-section.section {
 
 .tabbedimagewithtextflexboxcontainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -660,7 +676,7 @@ section.number-details-section.section {
 }
 
 .tabbedimagewithtextcontent h2 {
-    max-width: 55%;
+    max-width: 65%;
     position: relative;
     margin-bottom: 20px;
 }
@@ -670,7 +686,13 @@ section.number-details-section.section {
     padding-right: 20px;
 }
 
-.tabbedimagewithtextcontent h2:after {
+.tabbedimagewithtextcontent h2 span.titleimg {
+    display: inline-block;
+    max-width: 36px;
+    vertical-align: baseline;
+}
+
+/* .tabbedimagewithtextcontent h2:after {
     content: "";
     display: block;
     width: 40px;
@@ -685,7 +707,7 @@ section.number-details-section.section {
 
 #websiteoptimization .tabbedimagewithtextcontent h2:after{
     background-image: url("../images/good-feedback.png");
-}
+} 
 
 #searchmarketing .tabbedimagewithtextcontent h2:after{
     background-image: url("../images/social-reach.png");
@@ -696,7 +718,7 @@ section.number-details-section.section {
 #contentstrategy .tabbedimagewithtextcontent h2:after{
     background-image: url("../images/content-strategy.png");
     bottom: 6px;
-}
+} */
 
 /* Image with Text Accordion */
 
@@ -850,6 +872,7 @@ section.number-details-section.section {
 
 .pricing-flex-table-box-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     padding: 40px 20px;
     align-items: start;
@@ -975,13 +998,14 @@ span.pricing-frequency {
     max-width: 75%;
 }
 
-.imagewithtextsection2 .imagewithtextcontentbox h2:after{
+/* .imagewithtextsection2 .imagewithtextcontentbox h2:after{
     background-image: url("../images/internet.png");
     right: 20%;
-}
+} */
 
 .imagewithtextsection2 .imagewithtext-list-flex-box {
     display: flex;
+    /* flex-wrap: wrap; */
     gap: 10px;
     align-items: center;
 }
@@ -1111,6 +1135,7 @@ span.cta-image-box {
 
 .footerflexbox {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -1180,6 +1205,7 @@ span.cta-image-box {
 
 .copyrightflexbox {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
     align-items: center;
@@ -1258,7 +1284,7 @@ span.cta-image-box {
         position: absolute;
         top: -10px;
         left: 0;
-        padding: 40px 20px;
+        padding: 0 0px 40px;
         width: 100%;
         height: 100vh;
         background-color: var(--primary-color);
@@ -1277,7 +1303,7 @@ span.cta-image-box {
     }
     
     .mobileheader .contactctabuttonbox {
-        padding: 20px 0 0 0;
+        padding: 20px 15px 0;
         display: block;
     }
     
@@ -1294,9 +1320,6 @@ span.cta-image-box {
     }
 
     .mobilemenucrossbutton {
-        position: absolute;
-        right: 10px;
-        top: 10px;
         max-width: 16px;
         cursor: pointer;
     }
@@ -1304,5 +1327,255 @@ span.cta-image-box {
     .mobileheader .mobilemenucontainer.menuactive {
         transform: unset;
         transition: all 0.4s ease-in-out;
+    }
+
+    .mobilemenulogowithcross {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 15px;
+        border-bottom: 1px solid #a7a7a7;
+        margin-bottom: 20px;
+    }
+    
+    .mobilemenulogowithcross .mobilelogo {
+        max-width: 200px;
+        padding-right: 20px;
+    }
+
+    .herosectionbox{
+        align-items: center;
+    }
+
+    .herosectioncontent h1{
+        font-size: 54px;
+    }
+
+    .herosectioncontent p{
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .partnertitlebox{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .partnerflexbox{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .servicesflexitembox {
+        flex: 0 0 calc((100% - 40px) / 3);
+        max-width: calc((100% - 40px) / 3);
+    }
+
+    .numberdetailsflexitembox {
+        flex: 0 0 calc((100% - 40px) / 2);
+        max-width: calc((100% - 40px) / 2);
+    }
+
+    .tabbedimagewithtextcontent h2:after{
+        right: 0;
+    }
+
+    .imagewithtextcontentbox h2,
+    .tabbedimagewithtextcontent h2,
+    .imagewithtextctabuttoncontainer,
+    .imagewithtextcontentbox p,
+    .tabbedimagewithtextcontent p,
+    .image-with-accordion-content .imagewithtextcontentbox h2,
+    .imagewithtextaccordionbox .accordion-single,
+    .imagewithtextsection2 .imagewithtextcontentbox h2,
+    .cta-section-title-container h2,
+    .pricing-flex-item-box p{
+        max-width: 100%;
+    }
+
+    .tabbed-image-with-text-tab-box ul.tabs,
+    .cta-section-container{
+        max-width: 85%;
+    }
+
+    span.pricing-main-price{
+        font-size: 48px;
+    }
+
+    .footerflexitembox{
+        flex: 0 0 calc((100% - 20px)/2);
+        max-width: calc((100% - 20px)/2);
+    }
+
+    .footerflexbox{
+        row-gap: 40px;
+    }
+
+    .cta-section-content-desc-container p{
+        max-width: 100%;   
+    }
+}
+
+@media (max-width: 768px) {
+    .herosectioncontentbox{
+        max-width: 100%;
+        order: 1;
+    }
+
+    .herosectioncontent p{
+        font-size: 16px;
+    }
+    
+    .herosectionimagebox{
+        max-width: 100%;
+        order: 0;
+    }
+
+    .herosectioncontent h1{
+        font-size: 48px;
+    }
+
+    .partnerflexitem {
+        flex: 0 0 calc((100% - 10px) / 2);
+        max-width: calc((100% - 10px) / 2);
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .accordion-single-title::after{
+        right: 6px;
+    }
+
+    .tabbedimagewithtextsubtag {
+        margin-bottom: 8px;
+    }
+
+    .pricing-flex-table-box-container{
+        padding: 40px 0;
+    }
+
+    .servicesflexitembox {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .servicesflexitem{
+        padding: 0;
+    }
+
+    .imagewithtextimagebox,
+    .imagewithtextcontentbox{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .imagewithtextctabuttonitem {
+        flex: 0 0 calc((100% - 10px) / 2);
+        max-width: calc((100% - 10px) / 2);
+    }
+
+    .tabbedimagewithtextimagebox,
+    .numberdetailsflexitembox,
+    .tabbedimagewithtextcontentbox{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .image-with-accordion-content .imagewithtextcontentbox{
+        order: 1;
+    }
+
+    .image-with-accordion-content .imagewithtextimagebox{
+        order: 0;
+    }
+
+    .pricing-title-box,
+    .pricing-title-box p{
+        max-width: 100%;
+    }
+
+    .pricing-title-box::before,
+    .pricing-title-box::after{
+        width: 40px;
+        height: 40px;
+    }
+
+    .sectiontitlebox{
+        padding: 0;
+    }
+
+    .pricing-flex-item-box,
+    .tabbed-image-with-text-tab-box ul.tabs{
+        max-width: 100%;
+    }
+
+    .tabbed-image-with-text-tab-box ul.tabs li.tab{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .tabbedimagewithtextcontent p{
+        padding: 0;
+    }
+
+    .pricing-flex-item-box:nth-child(2n){
+        margin-top: 0;
+    }
+
+    .imagewithtext-list-contentbox {
+        font-size: 14px;
+    }
+
+    .cta-section-container{
+        max-width: 100%;
+        padding: 0;
+    }
+
+    span.cta-section-title-content {
+        font-size: 18px;
+    }
+
+    .footerflexitembox{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .footeraboutcontent {
+        padding: 0 0px 30px;
+    }
+
+    .copyrightflexbox{
+        justify-content: center;
+    }
+
+    .policyflexbox{
+        order: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .policyflex-item{
+        margin-bottom: 10px;
+    }
+
+    .policyflex-item:nth-child(2n)::after{
+        content: unset;
+    }
+
+
+    .copyrightcontentbox{
+        order: 1;
+    }
+
+    span.copyrighttext {
+        display: block;
+        text-align: center;
+        margin-bottom: 8px;
     }
 }
